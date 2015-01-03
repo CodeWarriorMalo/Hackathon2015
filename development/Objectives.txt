@@ -10,6 +10,9 @@
 [ ]      (1.5 hrs) Determine WebRTC From Pi Viability
 [ ]      (?) Build DB and test connectivity from apps
 
+[ ] Troy (?) Build Azure RESTful service for Universal App
+
+
 
 
 Server:		Lenovo-Lappy
