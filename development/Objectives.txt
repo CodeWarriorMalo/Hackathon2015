@@ -8,4 +8,11 @@
 [ ]      (?) Implement Configuration Between Apps [Pi Side]
 [ ]      (?) Implement Configuration Between Apps [Univ Side]
 [ ]      (1.5 hrs) Determine WebRTC From Pi Viability
+[ ]      (?) Build DB and test connectivity from apps
+
+
+
+Server:		Lenovo-Lappy
+Database: 	Wacther
+Table: 		PsuedoServer
 
