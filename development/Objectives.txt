@@ -1,0 +1,11 @@
+[ ] NAME (MAX TIME) ITEM
+-------------------------------------------------------------
+[ ] Troy (1.5 hrs ) Analyze Free-Fall Data for Ground Pound
+[ ] Mark (.5 hrs  ) Add logic for Universal App M2X Connection
+[ ] Mark (.25 hrs ) Add logic for Raspberry Pi Push To M2X
+[ ] Mark ( .5 hrs ) Verify Cross-Communication Between Apps
+[ ] Troy (?) Design Configuration Methodology Between Apps
+[ ]      (?) Implement Configuration Between Apps [Pi Side]
+[ ]      (?) Implement Configuration Between Apps [Univ Side]
+[ ]      (1.5 hrs) Determine WebRTC From Pi Viability
+
