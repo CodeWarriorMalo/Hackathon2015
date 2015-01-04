@@ -26,7 +26,7 @@ namespace UniversalCompanionApp
         public MainPage()
         {
             this.InitializeComponent();
-            TestConnection();
+        //    TestConnection();
         }
 
         private async void TestConnection()
@@ -38,6 +38,11 @@ namespace UniversalCompanionApp
             var _RawItems = await _RawTable.ReadAsync();
 
             string a = "";
+        }
+
+        private void DeviceControl_OnDeviceEvent(string deviceId, string lat, string lng, bool selected)
+        {
+            map.SetPin(deviceId, double.Parse(lat), double.Parse(lng), selected);
         }
     }
 }

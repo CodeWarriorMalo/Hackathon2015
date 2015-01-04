@@ -8,6 +8,52 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" RadiusX="5" RadiusY="5" Stroke="White">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Offset="0" Color="Transparent" />
+                        <GradientStop Offset=".5" Color="DarkOliveGreen" />
+                        <GradientStop Offset="1" Color="Transparent" />
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image x:Name="imgTitle" Grid.Column="1" Source="Assets/Title.png" />
+        <Rectangle RadiusX="5" RadiusY="5" Stroke="White" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Offset="0" Color="Black" />
+                        <GradientStop Offset=".5" Color="DarkSlateGray" />
+                        <GradientStop Offset="1" Color="Black" />
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" Margin="15">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400" />
+                    <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="400" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <local:MapControl Grid.Column="0" Grid.Row="0" x:Name="map" />
+                <local:MonitorControl Grid.Column="1" Grid.ColumnSpan="2" Margin="5,0,5,0"/>
+            <local:DeviceControl Grid.Row="1"  Grid.ColumnSpan="3" Margin="5,5,5,5" OnDeviceEvent="DeviceControl_OnDeviceEvent"/>
+        </Grid>
+      
     </Grid>
 </Page>

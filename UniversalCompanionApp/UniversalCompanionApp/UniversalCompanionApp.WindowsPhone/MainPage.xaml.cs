@@ -44,5 +44,9 @@ namespace UniversalCompanionApp
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+        private void DeviceControl_OnDeviceEvent(string deviceId, string lat, string lng, bool selected)
+        {
+            map.SetPin(deviceId, double.Parse(lat), double.Parse(lng), selected);
+        }
     }
 }
