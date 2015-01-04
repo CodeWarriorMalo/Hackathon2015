@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,15 +22,22 @@ namespace UniversalCompanionApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
             TestConnection();
         }
 
-        private void TestConnection()
+        private async void TestConnection()
         {
+            IMobileServiceTable<RawData> _RawTable = App.WachterMobileServiceClient.GetTable<RawData>();
             
+      
+          //  await _RawTable.InsertAsync(new RawData() { AccelX = 3, AccelY = 4, AccelZ = 5, DeviceId = "Test", GeoLat = 1, GeoLng = 2, TimeStamp = DateTime.Now });
+            var _RawItems = await _RawTable.ReadAsync();
+
+            string a = "";
         }
     }
 }

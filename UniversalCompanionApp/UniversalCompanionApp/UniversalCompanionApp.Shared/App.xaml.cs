@@ -25,19 +25,13 @@ namespace UniversalCompanionApp
     /// </summary>
     public sealed partial class App : Application
     {
-#if WINDOWS_PHONE_APP
-// http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
-public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient WachterMobileServiceClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
-"https://wachtermobileservice.azure-mobile.net/",
-"dKhjXZRIQdTtiLbsxGgtOwOZbtfwNL93");
-#endif
 
-#if WINDOWS_APP
+
         // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
         public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient WachterMobileServiceClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
         "https://wachtermobileservice.azure-mobile.net/",
         "dKhjXZRIQdTtiLbsxGgtOwOZbtfwNL93");
-#endif
+
 
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
