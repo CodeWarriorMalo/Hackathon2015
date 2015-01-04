@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WactherServiceApp",
+            "location": "North Central US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WactherServiceApp_db",
+                "serverName": "i2ym1ip5n8",
+                "user": "hackathon",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "South Central US"
+            }
+        ]
+    }
+}
