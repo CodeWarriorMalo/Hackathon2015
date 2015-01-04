@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceWebRole1", "WCFSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universal.Common", "Universal.Common\Universal.Common.csproj", "{AD179289-A685-4507-BBAE-293755377B4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WachterMobileService", "WachterMobileService\WachterMobileService.csproj", "{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UniversalCompanionApp\UniversalCompanionApp.Shared\UniversalCompanionApp.Shared.projitems*{3ede30a9-f783-40b9-bdb6-70a61b1020fb}*SharedItemsImports = 13
@@ -150,6 +152,20 @@ Global
 		{AD179289-A685-4507-BBAE-293755377B4B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{AD179289-A685-4507-BBAE-293755377B4B}.Release|x64.ActiveCfg = Release|Any CPU
 		{AD179289-A685-4507-BBAE-293755377B4B}.Release|x86.ActiveCfg = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|x64.ActiveCfg = Release|Any CPU
+		{FDED0301-23B3-4ABE-B6ED-E2FDDC47C125}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
