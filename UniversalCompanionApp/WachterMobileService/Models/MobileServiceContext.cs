@@ -28,7 +28,9 @@ namespace WachterMobileService.Models
         {
         }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<ContactInfo> ContactInfos { get; set; }
+        public DbSet<Config> Configs { get; set; }
+        public DbSet<RawData> RawDatas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -42,6 +44,7 @@ namespace WachterMobileService.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
     }
 
 }
