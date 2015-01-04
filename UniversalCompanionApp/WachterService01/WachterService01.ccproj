@@ -12,7 +12,7 @@
     <AssemblyName>WachterService01</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>WachterService01</Name>
-    <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
+    <PackageEnableRemoteDebugger>True</PackageEnableRemoteDebugger>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

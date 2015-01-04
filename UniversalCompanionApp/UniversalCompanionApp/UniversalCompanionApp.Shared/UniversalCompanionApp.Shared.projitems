@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MapControl.xaml.cs">
       <DependentUpon>MapControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Models.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MonitorControl.xaml.cs">
       <DependentUpon>MonitorControl.xaml</DependentUpon>
     </Compile>
@@ -41,6 +42,7 @@
       <DependentUpon>PinControlViewModel.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)RawData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)DeviceControl.xaml">
@@ -67,5 +69,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\0ece4ad6ca267474e6e00f9545768c6c.png" />
   </ItemGroup>
 </Project>

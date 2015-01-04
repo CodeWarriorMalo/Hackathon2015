@@ -47,7 +47,7 @@ namespace UniversalCompanionApp
         {
             float l = (float)(lng/(double)2);
             if (l < 0) l *= -1;
-            #if WINDOWS_PHONE_APP
+#if WINDOWS_PHONE_APP
             int deviate = _Rnd.Next(50);
 #else
             int deviate = _Rnd.Next(300);

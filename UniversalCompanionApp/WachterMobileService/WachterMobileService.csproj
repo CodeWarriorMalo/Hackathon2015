@@ -194,7 +194,6 @@
     <Compile Include="DataObjects\ContactInfo.cs" />
     <Compile Include="DataObjects\RawData.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
-    <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

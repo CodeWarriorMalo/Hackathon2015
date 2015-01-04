@@ -30,7 +30,7 @@
             <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1">
                 <Grid Grid.Row="1" x:Name="DeviceGrid" Margin="5">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
                         <!-- Device Id -->
                         <ColumnDefinition Width="*" />
                         <!-- Device Name -->
@@ -64,13 +64,13 @@
                     <Rectangle Fill="DarkSlateBlue" Grid.Column="4" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
                     <Rectangle Fill="DarkSlateBlue" Grid.Column="5" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
                     <Rectangle Fill="DarkSlateBlue" Grid.Column="6" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Device Id" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Name" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Latitude" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Longitude" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Threshold" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Incidents" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="20" Text="Status" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Id" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Name" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Latitude" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Longitude" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Threshold" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Incidents" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock FontWeight="Black" Foreground="Black" FontSize="{Binding FontSize}" Text="Status" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Grid>
             </ScrollViewer>
         </Grid>

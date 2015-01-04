@@ -11,7 +11,7 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
             <!-- Device Id -->
             <ColumnDefinition Width="*" />
             <!-- Device Name -->
@@ -36,13 +36,13 @@
         <Rectangle Fill="{Binding RowColor}" Grid.Column="4" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
         <Rectangle Fill="{Binding RowColor}" Grid.Column="5" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
         <Rectangle Fill="{Binding RowColor}" Grid.Column="6" Grid.Row="0" RadiusX="3" RadiusY="3" Stroke="Black" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding DeviceId}" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding DeviceName}" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding Latitude}" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding Longitude}" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding Threshold}" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding Incidents}" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Foreground="Black" FontSize="20" Text="{Binding Status}" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding DeviceId}" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Margin="3,0,3,0" Text="{Binding DeviceName}" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding Latitude}" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding Longitude}" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding Threshold}" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding Incidents}" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Foreground="Black" FontSize="{Binding FontSize}" Text="{Binding Status}" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <Rectangle Fill="{Binding ShinyColor}" Opacity=".5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
     </Grid>
 </UserControl>

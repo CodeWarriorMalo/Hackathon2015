@@ -21,6 +21,19 @@ namespace UniversalCompanionApp
                 return _Model.RowIndex % 2 == 0 ? new SolidColorBrush(Colors.White) : new SolidColorBrush(Colors.DarkGray);
             }
         }
+        public float FontSize
+        {
+            get
+            {
+                float fs = 20;
+#if WINDOWS_PHONE_APP
+
+            fs = 12;
+
+#endif
+                return fs;
+            }
+        }
         private bool _IsHighlighted;
         public bool IsHighlighted
         {
@@ -101,6 +114,13 @@ namespace UniversalCompanionApp
             get
             {
                 return _Model.Contact.ContactName;
+            }
+        }
+        public string ContactValue
+        {
+            get
+            {
+                return _Model.Contact.ContactValue;
             }
         }
         public string Status

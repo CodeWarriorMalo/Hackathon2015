@@ -26,23 +26,34 @@ namespace UniversalCompanionApp
         public MainPage()
         {
             this.InitializeComponent();
-        //    TestConnection();
+
+         // TestConnection();
         }
 
         private async void TestConnection()
         {
-            IMobileServiceTable<RawData> _RawTable = App.WachterMobileServiceClient.GetTable<RawData>();
+            ViewModels.ViewModel vm = new ViewModels.ViewModel(App.WachterMobileServiceClient);
+            DataContext = vm;
+            await vm.GetAllConfigsAsync();
+             Config c = new Config();
+             c.DeviceId = "Test Device";
+             c.FallThreshold = 2.4;
+             c.MaxGeoLat = 0;
+             c.MaxGeoLng = 0;
+             c.MinGeoLat = 0;
+             c.MinGeoLng = 0;
+             await vm.AddCofigAsync(c);
+             await vm.GetAllConfigsAsync();
             
-      
-          //  await _RawTable.InsertAsync(new RawData() { AccelX = 3, AccelY = 4, AccelZ = 5, DeviceId = "Test", GeoLat = 1, GeoLng = 2, TimeStamp = DateTime.Now });
-            var _RawItems = await _RawTable.ReadAsync();
-
-            string a = "";
+             string a = "";
         }
 
         private void DeviceControl_OnDeviceEvent(string deviceId, string lat, string lng, bool selected)
         {
             map.SetPin(deviceId, double.Parse(lat), double.Parse(lng), selected);
+
+
+            monitor.ViewModel = devices.GetMonitorControlViewModel(deviceId);
         }
     }
 }

@@ -34,7 +34,9 @@ namespace UniversalCompanionApp
             {
                 _ViewModel = value;
                 this.DataContext = _ViewModel;
+
             }
         }
+    
     }
 }

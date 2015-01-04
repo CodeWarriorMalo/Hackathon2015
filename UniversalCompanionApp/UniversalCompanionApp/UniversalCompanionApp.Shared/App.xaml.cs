@@ -29,7 +29,7 @@ namespace UniversalCompanionApp
 
         // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
         public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient WachterMobileServiceClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
-        "https://wachtermobileservice.azure-mobile.net/",
+        "http://wachtermobileservice.azure-mobile.net/",
         "dKhjXZRIQdTtiLbsxGgtOwOZbtfwNL93");
 
 
@@ -58,7 +58,7 @@ namespace UniversalCompanionApp
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+              //  this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 

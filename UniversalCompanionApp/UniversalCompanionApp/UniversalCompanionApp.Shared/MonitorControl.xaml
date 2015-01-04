@@ -7,10 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="400">
+    d:DesignWidth="600">
     
     <Grid>
-        <Rectangle RadiusX="5" RadiusY="5" Stroke="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Rectangle RadiusX="5" RadiusY="5" Stroke="White" Grid.RowSpan="2">
             <Rectangle.Fill>
                 <LinearGradientBrush>
                     <GradientStopCollection>
@@ -22,5 +26,66 @@
         </Rectangle>
         <Rectangle RadiusX="5" RadiusY="5" Stroke="White" Fill="DarkOliveGreen" Height="24" VerticalAlignment="Top"></Rectangle>
         <TextBlock x:Name="txtMonitor" Text="Details" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Rectangle Fill="DarkGreen" Opacity=".5" RadiusX="5" RadiusY="5" />
+            <Rectangle Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Id" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Grid.Column="0" Grid.Row="0" />
+            <TextBlock Text="{Binding Id}" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="16" Grid.Column="1" Grid.Row="0" />
+            <Rectangle Grid.Column="2" Opacity=".5" Fill="DarkGreen" RadiusX="5" RadiusY="5" />
+            <Rectangle Grid.Column="2" Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Name" Grid.Column="2" FontSize="16" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding DeviceId}" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+            <TextBlock Text="Geofencing" VerticalAlignment="Bottom" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" Grid.Row="1" Foreground="Lime" />
+            <Button Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1">
+                    <TextBlock Text="Set" />
+            </Button>
+            <Rectangle Grid.Column="0" Opacity=".5"  Grid.Row="2" Fill="DarkGreen" RadiusX="5" RadiusY="5" />
+            <Rectangle Grid.Column="0" Grid.Row="2" Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Min Lat" Grid.Column="0" FontSize="16" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding MinGeoLat}" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Rectangle Grid.Column="2" Opacity=".5"  Grid.Row="2" Fill="DarkGreen" RadiusX="5" RadiusY="5" />
+            <Rectangle Grid.Column="2" Grid.Row="2" Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Max Lat" Grid.Column="2" FontSize="16" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding MinGeoLat}" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Rectangle Grid.Column="4" Opacity=".5"  Grid.Row="2" Fill="DarkGreen" RadiusX="5" RadiusY="5" />
+            <Rectangle Grid.Column="4" Grid.Row="2" Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Min Lng" Grid.Column="4" FontSize="16" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding MinGeoLng}" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Rectangle Grid.Column="6" Opacity=".5"  Grid.Row="2" Fill="DarkGreen" RadiusX="5" RadiusY="5" />
+            <Rectangle Grid.Column="6" Grid.Row="2" Fill="Transparent" RadiusX="5" RadiusY="5" Stroke="White" Grid.ColumnSpan="2" />
+            <TextBlock Text="Max Lng" Grid.Column="6" FontSize="16" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding MaxGeoLng}" Grid.Column="7" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            <HyperlinkButton x:Name="linkToM2X" Grid.Column="4" Grid.Row="3" Padding="0" Grid.ColumnSpan="4" NavigateUri="http://api-m2x.att.com/v2/charts/0ece4ad6ca267474e6e00f9545768c6c.png">
+                <TextBlock Text="View Data On AT&amp;T's M2X Site" FontSize="12"  />
+            </HyperlinkButton>
+            <Image Grid.Column="4" Width="600" Grid.Row="4" Grid.ColumnSpan="4" Source="Assets/0ece4ad6ca267474e6e00f9545768c6c.png" />
+            <Grid Grid.Column="0"  Grid.Row="4" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                    <StackPanel >
+                    <TextBlock FontSize="20" Text="Emergency Contact" Foreground="Yellow" />
+                        <TextBlock Text="{Binding ContactPerson}" FontSize="16" />                            <TextBlock Text="{Binding ContactId}" />
+                    </StackPanel>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>
